@@ -37,10 +37,9 @@ document.getElementById("ngen-toolbox").addEventListener("click", async(e) =>  {
 function getHTML() {
     let result = "";
     result = ngenFrame.document.body.innerHTML.replace(/<div>/g, "<p>").replace(/<\/div>/g, "</p>")
-    result = result.replace(/<p>\s*(<br>)?\s*<\/p>/g, "<br>")
+    result = result.replace(/<br><\/p>$/g, "</p>")
+    result = result.replace(/<p><br><\/p>/g, "<br>")
     result = result.replace(/<\/p><p>/g, "<br>")
-    result = result.replace(/<br><\/p>/g, "</p>")
-    result = result.replace(/<\/p>(<br>)+<p>/g, "</p><p>")
 
     return result;
 }
