@@ -7,7 +7,7 @@ writebox.setAttribute("src", "about:blank");
 toolbox.append(createButtonWithCmd("bold", "B"));
 toolbox.append(createButtonWithCmd("italic", "I"));
 toolbox.append(createButtonWithCmd("underline", "U"));
-toolbox.append(createButtonWithCmd("strike", "S"));
+toolbox.append(createButtonWithCmd("strikeThrough", "S"));
 
 document.getElementById("ngen-editor").append(toolbox);
 document.getElementById("ngen-editor").append(writebox);
@@ -45,8 +45,9 @@ function getHTML() {
     result = result.replace(/<br><\/p>$/g, "</p>")
     result = result.replace(/<p><br><\/p>/g, "<br>")
     result = result.replace(/<\/p><p>/g, "<br>")
-    result = result.replace(/<\/p><br><p>/g, "<\/p><p>")
-    result = result.replace(/<\/p>((<br>)+)<br><p>/g, "<\/p>$1<p>")
+    result = result.replace(/<\/p><br><p>/g, "</p><p>")
+    result = result.replace(/<\/p>((<br>)+)<br><p>/g, "</p>$1<p>")
+    result = result.replace(/<\/p><br>$/g, "</p>")
 
     return result;
 }
