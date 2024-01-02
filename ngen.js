@@ -9,6 +9,7 @@ tool2 = createElementWithId("div", "ngen-tool2");
 tool1.append(createButtonWithCmd("h1", "H1"));
 tool1.append(createButtonWithCmd("h2", "H2"));
 tool1.append(createButtonWithCmd("h3", "H3"));
+tool1.append(createButtonWithCmd("p", "x"));
 tool2.append(createStyleButtonWithCmd("bold", "B"));
 tool2.append(createStyleButtonWithCmd("italic", "I"));
 tool2.append(createStyleButtonWithCmd("underline", "U"));
