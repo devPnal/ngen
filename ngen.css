@@ -14,3 +14,8 @@
     height: 28px;
     border: 0px;
 }
+
+#ngen-tool1, #ngen-tool2 {
+    display: inline-block;
+    border-right: 1px solid #ccc;
+}
