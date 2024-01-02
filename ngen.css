@@ -1,0 +1,16 @@
+#ngen-toolbox {
+    height: 30px;
+    background-color: #eee;
+}
+
+#ngen-writebox {
+    width: 100%;
+    height: Calc(100% - 30px);
+    border: 0px;
+}
+
+#ngen-toolbox button {
+    width: 28px;
+    height: 28px;
+    border: 0px;
+}

@@ -1,0 +1,13 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+}
+
+#ngen-editor {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 400px;
+    max-width: 720px;
+    margin: 20px auto;
+}
