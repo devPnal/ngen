@@ -5,6 +5,7 @@ writebox.setAttribute("src", "about:blank");
 
 tool1 = createElementWithId("div", "ngen-tool1");
 tool2 = createElementWithId("div", "ngen-tool2");
+tool3 = createElementWithId("div", "ngen-tool3");
 
 tool1.append(createButtonWithCmd("h1", "H1"));
 tool1.append(createButtonWithCmd("h2", "H2"));
@@ -14,9 +15,12 @@ tool2.append(createStyleButtonWithCmd("bold", "B"));
 tool2.append(createStyleButtonWithCmd("italic", "I"));
 tool2.append(createStyleButtonWithCmd("underline", "U"));
 tool2.append(createStyleButtonWithCmd("strikeThrough", "S"));
+tool3.append(createButtonList("insertUnorderedList", "•≡"));
+tool3.append(createButtonList("insertOrderedList", "1≡"));
 
 toolbox.append(tool1)
 toolbox.append(tool2)
+toolbox.append(tool3)
 
 document.getElementById("ngen-editor").append(toolbox);
 document.getElementById("ngen-editor").append(writebox);
@@ -52,6 +56,16 @@ function createStyleButtonWithCmd(_cmd, _letter) {
     return newBtn;
 }
 
+function createButtonList(_cmd, _letter) {
+    newBtn = document.createElement("Button");
+    newBtn.setAttribute("type", "button");
+    newBtn.setAttribute("tool-cmd", _cmd);
+    letter = document.createElement("div");
+    letter.innerHTML = _letter;
+    newBtn.append(letter)
+    return newBtn;
+}
+
 tool1.addEventListener("click", async(e) =>  {
     const cmd = e.target.closest("button").getAttribute("tool-cmd");
     ngenFrame.document.execCommand("formatBlock", false, "<" + cmd + ">");
@@ -59,6 +73,12 @@ tool1.addEventListener("click", async(e) =>  {
 });
 
 tool2.addEventListener("click", async(e) =>  {
+    const cmd = e.target.closest("button").getAttribute("tool-cmd");
+    ngenFrame.document.execCommand(cmd, false, null);
+    console.log(getHTML());
+});
+
+tool3.addEventListener("click", async(e) =>  {
     const cmd = e.target.closest("button").getAttribute("tool-cmd");
     ngenFrame.document.execCommand(cmd, false, null);
     console.log(getHTML());

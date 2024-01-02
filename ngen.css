@@ -15,7 +15,7 @@
     border: 0px;
 }
 
-#ngen-tool1, #ngen-tool2 {
+#ngen-tool1, #ngen-tool2, #ngen-tool3{
     display: inline-block;
     border-right: 1px solid #ccc;
 }
