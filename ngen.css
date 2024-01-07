@@ -15,7 +15,36 @@
     border: 0px;
 }
 
-#ngen-tool1, #ngen-tool2, #ngen-tool3{
+#ngen-tool1, #ngen-tool2, #ngen-tool3, #ngen-tool5{
     display: inline-block;
     border-right: 1px solid #ccc;
+}
+
+#ngen-tool4{
+    display: inline-block;
+}
+
+#ngen-image-box {
+    display: inline-grid;
+    background-color: #fff;
+    width: 204px;
+    position: relative;
+    top: 28px;
+    left: -58px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px 1px #ccc;
+    display: none;
+}
+#ngen-image-box button {
+    display: inline-block;
+    height: 25px;
+    width: 100%;
+    padding: 0px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+#ngen-image-box input:last-child {
+    display: block;
+    width: 100%;
 }
