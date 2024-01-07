@@ -36,7 +36,7 @@ ngenFrame.document.write("<br>");
 ngenFrame.document.close();
 
 imageBox = createElementWithId("div", "ngen-image-box");
-imageBox.innerHTML = "<input type='file' id='ngen-image-source' name='ngen-image-source' placeholder='Please select a image'><input type='input' name='ngen-image-alt' placeholder='Alt text'><button type='button' id='ngen-insert-image' name='ngen-insert-image' disabled=true>Done</button>";
+imageBox.innerHTML = "<input type='file' id='ngen-image-source' name='ngen-image-source' placeholder='Please select a image'><button type='button' id='ngen-insert-image' name='ngen-insert-image' disabled=true>Done</button>";
 toolbox.append(imageBox)
 
 function createElementWithId(_type, _id) {
