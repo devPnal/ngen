@@ -1,3 +1,5 @@
+![image](https://github.com/devPnal/ngen/assets/102811808/868add77-6578-43ac-bcfd-aaa80d7a8ffb)
+
 # Ngen
 The simplest, most transparent WYSIWYG editor
 
@@ -14,9 +16,19 @@ body: <script src="/ngen.js"></script>
 
 Done! Now you can see the editor in your project.
 
+![editor image](https://github.com/devPnal/ngen/assets/102811808/e515b97f-99a1-4bbb-8d30-fae0c1f50004)
+
+3. You can get the HTML code of your text with the `getHTML` function.
+
+For example, in index.html (the demo page):
+```
+<button type="button" onClick="alert(getHTML());">Get HTML!</button>
+```
+
 ## Custom CSS
 You can adjust its size or some styles via the `#ngen-editor` selector in any css file, see the style.css file.
 ```
+
 <style.css in demo project>
     background-color: #fff;
     border: 1px solid #ccc;
