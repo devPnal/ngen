@@ -7,7 +7,7 @@ The simplest, most transparent WYSIWYG editor
 head: <link rel="stylesheet" href="ngen.css">
 body: <script src="/ngen.js"></script>
 ```
-2. Insert a div tag with the id ngen-editor.
+2. Insert a div tag with the id `ngen-editor`.
 ```
 <div id="ngen-editor"></div> 
 ```
