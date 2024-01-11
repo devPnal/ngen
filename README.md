@@ -2,7 +2,7 @@
 The simplest, most transparent WYSIWYG editor
 
 ## How to use?
-1. Import JS, CSS File to your project like `index.html` or below.
+1. Import `ngen.js`, `ngen.css` File to your project like `index.html` or below.
 ```
 head: <link rel="stylesheet" href="ngen.css">
 body: <script src="/ngen.js"></script>
