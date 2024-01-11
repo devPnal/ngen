@@ -28,14 +28,13 @@ For example, in index.html (the demo page):
 ## Custom CSS
 You can adjust its size or some styles via the `#ngen-editor` selector in any css file, see the style.css file.
 ```
-
 <style.css in demo project>
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    height: 400px;
-    max-width: 720px;
-    margin: 20px auto;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 4px;
+height: 400px;
+max-width: 720px;
+margin: 20px auto;
 ```
 
 ## More options
